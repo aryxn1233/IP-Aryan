@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Add some basic styling for the search bar */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .search-container {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+      width: 200px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #bfc817;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="performSearch()">Search</button>
+  </div>
+
+  <script>
+
+
+    
+    const phone = [
+        {
+            id:0,
+            image:'xiaomi 13pro.webp',
+            title:'Xiaomi 12 Pro(Noir black, 256GB)',
+            price:79999
+        },
+        {
+            id:1,
+            image:'vivo t2 pro.webp',
+            title:' Vivo T2 Pro 5G (New Moon Black, 256GB)',
+            price:24999
+        },
+        {
+            id:2,
+            image:'vivo t2x.webp',
+            title:'Vivo T2x 5G (New Moon Black, 256GB)',
+            price:24999
+        },
+        {
+            id:3,
+            image:'poco.webp',
+            title:'Poco C55(Power Green,64GB)',
+            price:6999
+        },
+        {
+            id:4,
+            image:'redmi 12.webp',
+            title:'Redmi 12 5G (Pastel blue,128GB)',
+            price:12999
+        },
+        {
+            id:5,
+            image:'redmi 12.webp',
+            title:'Vivo T2 Pro 5G (New Moon Black, 256GB)',
+            price:24999
+        },
+        {
+            id:6,
+            image:'redmi 13pro.webp',
+            title:'Redmi Note13 Pro 5G (Coral Purple, 256GB)',
+            price:25999
+        },
+        {
+            id:7,
+            image:'moto g32.webp',
+            title:' Moto G32 5G  (New Moon Black, 128GB)',
+            price:14999
+        },
+        {
+            id:8,
+            image:'iphone 15.webp',
+            title:'Apple iphone 15 (Blue, 128GB)',
+            price:66999
+        },
+        {
+            id:9,
+            image:'realme11pro.webp',
+            title:'Realme 11 Pro 5G(Astral Black,256GB)',
+            price:27999
+        },
+        {
+            id:10,
+            image:'samsung f14 5g.webp',
+            title:'Samsung F14 5G (B.A.E Purple, 128GB)',
+            price:9990
+        },
+        {
+            id:11,
+            image:'iphone 15pro max.webp',
+            title:'Apple iphone 15 Pro max (White Titanium, 256GB)',
+            price: 156900
+        },
+        {
+            id:12,
+            image:'vivo x100.webp',
+            title:'Vivo X100(Stargaze Blue,256GB)',
+            price:63999
+        }
+       
+    ];
+    function performSearch() {
+      var searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+      // Perform a simple search in the array
+      const foundPhone = phones.find(phone => phone.name.toLowerCase().includes(searchTerm));
+
+      // Display the result
+      const resultElement = document.getElementById('result');
+      if (foundPhone) {
+        resultElement.textContent = `Phone found: ${foundPhone.brand} ${foundPhone.name}`;
+      } else {
+        resultElement.textContent = 'Phone not found';
+      }
+    }
+  </script>
+
+</body>
+</html>

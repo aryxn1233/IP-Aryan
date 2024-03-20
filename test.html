@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="project.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .product-card {
+      width: 200px;
+      margin: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    #searchBar {
+      margin: 20px;
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Add a search bar at the top -->
+  <input type="text" id="searchBar" placeholder="Search phones..." oninput="searchPhones()">
+
+  <div class="product-container">
+    <div class="product-card">
+      <img src="xiaomi 13pro.webp">
+      <p class="varrient-name">Xiaomi 12 Pro (Noir black, 256GB) <br> ₹79,999</p>
+    </div>
+
+    <div class="product-card">
+      <img src="vivo t2 pro.webp">
+      <p class="varrient-name">Vivo T2 Pro 5G (New Moon Black, 256GB) <br> ₹24,999</p>
+    </div>
+
+    <!-- Add more product cards here -->
+
+    <div class="product-card">
+      <img src="vivo t2x.webp">
+      <p class="varrient-name">Vivo T2x 5G (New Moon Black, 256GB) <br> ₹24,999</p>
+    </div>
+
+    <div class="product-card">
+      <img src="poco.webp">
+      <p class="varrient-name">Poco C55 (Power Green, 64GB) <br> ₹6,999</p>
+    </div>
+
+    <div class="product-card">
+      <img src="redmi 12.webp">
+      <p class="varrient-name">Redmi 12 5G (Pastel blue, 128GB) <br> ₹12,999</p>
+    </div>
+
+    <div class="product-card">
+      <img src="redmi 12.webp">
+      <p class="varrient-name">Vivo T2 Pro 5G (New Moon Black, 256GB) <br> ₹24,999</p>
+    </div>
+
+    <div class="product-card">
+      <img src="redmi 13pro.webp">
+      <p class="varrient-name">Redmi Note13 Pro 5G (Coral Purple, 256GB) <br> ₹25,999</p>
+    </div>
+
+    <div class="product-card">
+      <img src="moto g32.webp">
+      <p class="varrient-name">Moto G32 5G (New Moon Black, 128GB) <br> ₹14,999</p>
+    </div>
+
+    <div class="product-card">
+      <img src="iphone 15.webp">
+      <p class="varrient-name">Apple iPhone 15 (Blue, 128GB) <br> ₹66,999</p>
+    </div>
+
+    <div class="product-card">
+      <img src="realme11pro.webp">
+      <p class="varrient-name">Realme 11 Pro 5G (Astral Black, 256GB) <br> ₹27,999</p>
+    </div>
+
+    <div class="product-card">
+      <img src="samsung f14 5g.webp">
+      <p class="varrient-name">Samsung F14 5G (B.A.E Purple, 128GB) <br> ₹9,990</p>
+    </div>
+
+    <div class="product-card">
+      <img src="iphone 15pro max.webp">
+      <p class="varrient-name">Apple iPhone 15 Pro Max (White Titanium, 256GB) <br> ₹1,56,900</p>
+    </div>
+
+    <div class="product-card">
+      <img src="vivo x100.webp">
+      <p class="varrient-name">Vivo X100 (Stargaze Blue, 256GB) <br> ₹63,999</p>
+    </div>
+
+    <div class="product-card">
+      <img src="poco x6 pro.webp">
+      <p class="varrient-name">Poco X6 5G (Stargaze Blue, 256GB) <br> ₹21,999</p>
+    </div>
+
+    <div class="product-card">
+      <img src="oppo reno 11.webp">
+      <p class="varrient-name">Oppo Reno11 5G (Rock Grey, 128GB) <br> ₹23,999</p>
+    </div>
+
+    <div class="product-card">
+      <img src="realme 11x.webp">
+      <p class="varrient-name">Realme 11x 5G (Midnight Black, 128GB) <br> ₹14,999</p>
+    </div>
+
+    <div class="product-card">
+      <img src="samsung s21 fe.webp">
+      <p class="varrient-name">Samsung S21 FE 5G (White, 256GB) <br> ₹33,999</p>
+    </div>
+
+    <div class="product-card">
+      <img src="nothing 2.webp">
+      <p class="varrient-name">Nothing Phone(2) (Dark Grey, 512GB) <br> ₹42,999</p>
+    </div>
+
+    <div class="product-card">
+      <img src="samsung f34 5g.webp">
+      <p class="varrient-name">Samsung F34 5G (Orchid Violet, 128GB) <br> ₹15,999</p>
+    </div>
+
+    <div class="product-card">
+      <img src="samsung a15 5g.webp">
+      <p class="varrient-name">Samsung A15 5G (Light blue, 128GB) <br> ₹19,499</p>
+    </div>
+
+    <div class="product-card">
+      <img src="oppo a59 5g.webp">
+      <p class="varrient-name">Oppo A59 5G (Silk Gold, 128GB) <br> ₹15,500</p>
+    </div>
+
+    <div class="product-card">
+      <img src="google

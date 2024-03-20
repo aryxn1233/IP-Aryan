@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      background-color: #000000;
+      text-align: center;
+    }
+
+    .logo img {
+      height: auto;
+      max-width: 200px;
+      margin: 10px 0;
+    }
+
+    .tag {
+      font-family: cursive;
+      font-size: 60px;
+      color: #ff9a17;
+      margin-top: 5vw;
+      margin-left: 5vw;
+      position: absolute;
+      max-width: 90%;
+    }
+
+    .login-container {
+      display: flex;
+      justify-content: flex-end; 
+      align-items: center;
+      margin-top: 10vw;
+      padding-right: 5vw; 
+      margin-left: 0px;
+    }
+
+    .login-form {
+      width: 90%;
+      max-width: 450px;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 20px 20px 50px ;
+    }
+
+    body {
+      background-color: rgb(255, 255, 255);
+      font-size: 16px;
+    }
+
+ 
+    input {
+      border-radius: 15px;
+    }
+
+
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    .login-form input[type="submit"] {
+      background: #3a65ba;
+      background-color: ;
+      color: rgb(255, 255, 255);
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    .login-form input[type="submit"]:hover {
+      opacity: 1;
+    }
+
+    .new-account {
+      margin-top: 20px;
+      background: #3f74de;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      display: flex;
+      font-family: 'Ubuntu', sans-serif;
+      justify-content: center;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .new-account:hover {
+      background: #3a65ba;
+      background:;
+    }
+
+    @media screen and (max-width: 768px) {
+      .tag {
+        font-size: 4vw;
+      }
+
+      .login-container {
+        margin-top: 15vw;
+        padding-right: 0;
+        justify-content: center; 
+    }
+
+    @media screen and (max-width: 480px) {
+      .tag {
+        font-size: 6vw;
+      }
+
+      .logo img {
+        height: 80px;
+      }
+
+      .login-container {
+        margin-top: 20vw;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">
+    <img id="logo" src="logo.png" alt="Logo">
+  </div>
+  <h1 class="tag">Discover your style <br> Shop your way!</h1>
+  <div class="login-container">
+    <form class="login-form" action="/action_page.php" method="post">
+      <h2 align="center">Sign in</h2>
+      <label for="username"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="username" id="username" required>
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" id="password" required>
+      <input type="submit" value="Login">
+      <a href="#">Forgot password?</a>
+      <a class="new-account" href="newuser.html">Create a new account</a>
+    </form>
+  
+  </div>
+
+</body>
+</html>

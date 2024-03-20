@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .product-container {
+    text-align: right;
+  }
+  
+  .product {
+    text-align: left;
+    margin: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
